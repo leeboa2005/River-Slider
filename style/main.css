@@ -1,0 +1,189 @@
+/* Font */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* River Slider */
+#wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #090a0e;
+  font-family: 'Pretendard-Regular';
+}
+
+.river_wrap {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.river_wrap h1 {
+  padding: 50px 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.river_slides_wrap {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto 6px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.river_slides {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.river_slides.original {
+  animation: 200s linear 0s infinite normal forwards running slide01;
+}
+
+.river_slides.clone {
+  animation: 200s linear 0s infinite normal none running slide02;
+}
+
+.river_slides li {
+  display: inline-block;
+  position: relative;
+  width: 238px;
+  height: 135px;
+  border-radius: 10px;
+}
+
+.river_slides li {
+  margin-right: 6px
+}
+
+.river_slides li img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+.river_slides li .river_slides-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, .4);
+  transition: opacity .3s;
+  border-radius: 10px;
+}
+
+.river_slides li .river_slides_cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform .4s;
+  transform: translate(-50%, calc(-50%));
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+  min-width: 28px;
+  padding: 8px 16px;
+  border-radius: 980px;
+  letter-spacing: -0.016em;
+  font-weight: 700;
+  background: #fff;
+  color: #1d1d1f;
+}
+
+.river_slides li .river_slides-content:hover {
+  opacity: .999
+}
+
+.river_slides li .river_slides-content:hover a {
+  transform: translate(-50%, -50%);
+  opacity: .999
+}
+
+/* River Slider buttons */
+.river_controls {
+  margin-top: 15px;
+  position: relative;
+}
+
+.river_stop_btn,
+.river_play_btn {
+  font-size: 22px;
+  color: #ffffff;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.river_stop_btn.active,
+.river_play_btn.active {
+  display: block;
+}
+
+/** River Slider Animation **/
+/* Original */
+@keyframes slide01 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  50.01% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Clone */
+@keyframes slide02 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Reactive Type */
+@media only screen and (max-width: 1068px) {
+  .river_wrap {
+    width: 720px;
+  }
+
+  .river_slides li {
+    width: 171px;
+    height: 97px
+  }
+
+}
+
+@media only screen and (max-width: 734px) {
+  .river_wrap {
+    width: 80%;
+  }
+
+  .river_slides li {
+    width: 171px;
+    height: 97px
+  }
+}
