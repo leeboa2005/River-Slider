@@ -1,4 +1,5 @@
 "use script";
+
 // 각각의 슬라이드 data를 불러옴
 function loadItems() {
   return fetch("data/data.json")
