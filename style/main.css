@@ -45,14 +45,6 @@
   flex-wrap: nowrap;
 }
 
-.river_slides.original {
-  animation: 200s linear 0s infinite normal forwards running slide01;
-}
-
-.river_slides.clone {
-  animation: 200s linear 0s infinite normal none running slide02;
-}
-
 .river_slides li {
   position: relative;
   width: 238px;
@@ -87,15 +79,13 @@
   top: 50%;
   left: 50%;
   transition: transform .4s;
-  transform: translate(-50%, calc(-50%));
+  transform: translate(-50%, -50%);
   cursor: pointer;
-  display: inline-block;
   text-align: center;
-  white-space: nowrap;
   font-size: 14px;
   min-width: 28px;
   padding: 8px 16px;
-  border-radius: 980px;
+  border-radius: 10px;
   letter-spacing: -0.016em;
   font-weight: 700;
   background: #fff;
@@ -109,6 +99,14 @@
 .river_slides li .river_slides-content:hover a {
   transform: translate(-50%, -50%);
   opacity: .999
+}
+
+.river_slides.original {
+  animation: 200s linear 0s infinite normal forwards running slide01;
+}
+
+.river_slides.clone {
+  animation: 200s linear 0s infinite normal none running slide02;
 }
 
 /* River Slider buttons */
