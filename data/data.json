@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "img": "./img/slides/1.jpg",
+      "title": "1번 이미지 상세정보 이동",
+      "link": "#",
+      "alt": "1번 이미지"
+    },
+    {
+      "img": "./img/slides/2.jpg",
+      "title": "2번 이미지 상세정보 이동",
+      "link": "#",
+      "alt": "2번 이미지"
+    },
+    {
+      "img": "./img/slides/3.jpg",
+      "title": "3번 이미지 상세정보 이동",
+      "link": "#",
+      "alt": "3번 이미지"
+    },
+    {
+      "img": "./img/slides/4.jpg",
+      "title": "4번 이미지 상세정보 이동",
+      "link": "#",
+      "alt": "4번 이미지"
+    },
+    {
+      "img": "./img/slides/5.jpg",
+      "title": "5번 이미지 상세정보 이동",
+      "link": "#",
+      "alt": "5번 이미지"
+    },
+    {
+      "img": "./img/slides/6.jpg",
+      "title": "6번 이미지 상세정보 이동",
+      "link": "#",
+      "alt": "6번 이미지"
+    }
+  ]
+}
