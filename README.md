@@ -11,4 +11,4 @@
 
 자세한 내용은 하단 velog링크로 접속하시면 보실 수 있습니다.
 
-[자동 슬라이드 제작기]([https://holjjack.tistory.com/191](https://velog.io/@leeboa2003/%EC%9E%90%EB%8F%99-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0))
+[자동 슬라이드 제작기](https://velog.io/@leeboa2003/%EC%9E%90%EB%8F%99-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0)
